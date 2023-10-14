@@ -46,6 +46,7 @@ export default function Post({ post, posts, preview }) {
                 </script>
 
               </Head>
+              <AdsMgidHeader />
               <PostHeader
                 title={post.title}
                 coverImage={post.featuredImage}
@@ -53,7 +54,6 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}           
               />
-              <AdsMgidHeader />
               <PostBody content={post.content}
               />
               
