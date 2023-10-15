@@ -44,7 +44,7 @@ const autoGA = `	<!-- Google tag (gtag.js) -->
 
   gtag('config', 'UA-45012531-1');
 </script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2298771967414850"
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271746353762763"
      crossorigin="anonymous"></script>`;
 
 export default function Post({ post, posts, preview }) {
