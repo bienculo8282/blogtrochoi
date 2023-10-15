@@ -35,7 +35,16 @@ const lastMGID = `<!-- Composite Start -->
 </script>
 <!-- Composite End -->`;
 
-const autoGA = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3282955545573150"
+const autoGA = `	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45012531-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-45012531-1');
+</script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2298771967414850"
      crossorigin="anonymous"></script>`;
 
 export default function Post({ post, posts, preview }) {
