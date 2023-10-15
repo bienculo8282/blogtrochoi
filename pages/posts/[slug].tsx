@@ -35,6 +35,9 @@ const lastMGID = `<!-- Composite Start -->
 </script>
 <!-- Composite End -->`;
 
+const autoGA = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3282955545573150"
+     crossorigin="anonymous"></script>`;
+
 export default function Post({ post, posts, preview }) {
   const router = useRouter()
   const morePosts = posts?.edges
@@ -63,6 +66,11 @@ export default function Post({ post, posts, preview }) {
       <div dangerouslySetInnerHTML={{ __html: adsMGID }} />
     );
   }
+  function AutoGA() {
+    return (
+      <div dangerouslySetInnerHTML={{ __html: autoGA }} />
+    );
+  }
 
   return (
     <Layout preview={preview}>
@@ -81,6 +89,7 @@ export default function Post({ post, posts, preview }) {
                   content={post.featuredImage?.node.sourceUrl}
                 />
               </Head>
+              <AutoGA />
               <AdsMgidHeader />
               <PostHeader
                 title={post.title}
