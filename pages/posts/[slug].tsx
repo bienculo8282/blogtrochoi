@@ -93,7 +93,7 @@ export default function Post({ post, posts, preview }) {
                 </title>
                 <meta
                   property="og:image"
-                  content={post.featuredImage?.node.sourceUrl}
+                  content={post.featuredImage}
                 />
               </Head>
               <AutoGA />
