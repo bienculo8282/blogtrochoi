@@ -15,7 +15,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>{`Love animals`}</title>
+        <title>{`Increíble nuevo`}</title>
       </Head>
       <Container>
         <Intro />
