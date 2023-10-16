@@ -31,8 +31,6 @@ const adsMGID = `<!-- Composite Start -->
 const lastMGID = `<!-- Composite Start -->
 <div id="M838848ScriptRootC1376798">
 </div>
-<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
-</script>
 <!-- Composite End --><!-- Composite Start -->
 <div id="M838848ScriptRootC1376798">
 </div>
