@@ -35,11 +35,6 @@ const lastMGID = `<!-- Composite Start -->
 </div>
 <script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
 </script>
-<!-- Composite End --><!-- Composite Start -->
-<div id="M838848ScriptRootC1376798">
-</div>
-<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
-</script>
 <!-- Composite End -->`;
 
 const autoGA = `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45012531-1"></script>
