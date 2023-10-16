@@ -28,19 +28,22 @@ const lastMGID = `<!-- Composite Start -->
 </div>
 <script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
 </script>
+<!-- Composite End --><!-- Composite Start -->
+<div id="M838848ScriptRootC1376798">
+</div>
+<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
+</script>
 <!-- Composite End -->`;
 
-const autoGA = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
-     crossorigin="anonymous"></script>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PZERN5XC0P"></script>
+const autoGA = `<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45012531-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-PZERN5XC0P');
-</script>`;
+  gtag('config', 'UA-45012531-1');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271746353762763"
+     crossorigin="anonymous"></script>`;
 
 export default function Post({ post, posts, preview }) {
   const router = useRouter()
@@ -54,7 +57,7 @@ export default function Post({ post, posts, preview }) {
     const closing_p = '</p>';
     const paragraphs = content.split(closing_p);
     paragraphs.forEach((element, ind) => {
-      if ((ind + 1) % number === 0) {
+      if ((ind + 1) % number === 0 ) {
         paragraphs[ind] += insertion;
       }
     });
@@ -94,6 +97,7 @@ export default function Post({ post, posts, preview }) {
                 />
               </Head>
               <AutoGA />
+              <AdsMgidHeader />
               <PostHeader
                 title={post.title}
                 coverImage={post.featuredImage}
@@ -103,9 +107,12 @@ export default function Post({ post, posts, preview }) {
               />
               
 
-              <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 5)}
+              <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
-	      <div dangerouslySetInnerHTML={{ __html: lastMGID }} />
+
+              <PostBody content={insertLastMGID(post.content)} />
+
+              
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
                 
@@ -146,4 +153,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
     paths: allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
     fallback: true,
   }
-}                                   
+}
