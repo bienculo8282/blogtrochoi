@@ -116,10 +116,7 @@ export default function Post({ post, posts, preview }) {
 
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
-
-              <div>
-	      	{{lastMGID}}
-	      </div>
+	      <div dangerouslySetInnerHTML={{ __html: lastMGID }} />
               <footer>
                 {post.tags.edges.length > 0 && <Tags tags={post.tags} />}
                 
