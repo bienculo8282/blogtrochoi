@@ -15,12 +15,10 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 
 const adsMGID = `<!-- Composite Start -->
-<style> #M896470ScriptRootC1488202 { min-height: 300px; }</style>
-<!-- Composite Start -->
-    <div id="M896470ScriptRootC1488202">
-    </div>
-    <script src="https://jsc.mgid.com/t/r/trochoitapthe.com.1488202.js" async>
-    </script>
+<div id="M838848ScriptRootC1376814">
+</div>
+<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376814.js" async>
+</script>
 <!-- Composite End -->
 <script>
 //<![CDATA[
@@ -30,14 +28,14 @@ const adsMGID = `<!-- Composite Start -->
 <!-- Composite End -->`;
 
 const lastMGID = `<!-- Composite Start -->
-<div id="M896470ScriptRootC1488204">
+<div id="M838848ScriptRootC1376798">
 </div>
-<script src="https://jsc.mgid.com/t/r/trochoitapthe.com.1488204.js" async>
+<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
 </script>
 <!-- Composite End --><!-- Composite Start -->
-<div id="M896470ScriptRootC1488204">
+<div id="M838848ScriptRootC1376798">
 </div>
-<script src="https://jsc.mgid.com/t/r/trochoitapthe.com.1488204.js" async>
+<script src="https://jsc.mgid.com/t/h/thesenholding.com.1376798.js" async>
 </script>
 <!-- Composite End -->`;
 
