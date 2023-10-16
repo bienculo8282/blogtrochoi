@@ -15,11 +15,11 @@ import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import { CMS_NAME } from '../../lib/constants'
 
 const adsMGID = `<!-- Composite Start -->
-<style> #M896470ScriptRootC1488202 { min-height: 300px; }</style>
+<style> #M838848ScriptRootC1375252 { min-height: 300px; }</style>
 <!-- Composite Start -->
-    <div id="M896470ScriptRootC1488202">
+    <div id="M838848ScriptRootC1375252">
     </div>
-    <script src="https://jsc.mgid.com/t/r/trochoitapthe.com.1488202.js" async>
+    <script src="https://jsc.mgid.com/t/h/thesenholding.com.1375252.js" async>
     </script>
 <!-- Composite End -->
 
@@ -44,7 +44,7 @@ const autoGA = `<script async src="https://www.googletagmanager.com/gtag/js?id=U
   gtag('js', new Date());
   gtag('config', 'UA-45012531-1');
 </script>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2271746353762763"
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
      crossorigin="anonymous"></script>`;
 
 export default function Post({ post, posts, preview }) {
