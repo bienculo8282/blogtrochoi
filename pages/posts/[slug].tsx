@@ -64,7 +64,7 @@ export default function Post({ post, posts, preview }) {
     const closing_p = '</p>';
     const paragraphs = content.split(closing_p);
     paragraphs.forEach((element, ind) => {
-      if ((ind + 1) % number === 0 ) {
+      if ((ind + 1) % number === 0 && ind !== 0 ) {
         paragraphs[ind] += insertion;
       }
     });
