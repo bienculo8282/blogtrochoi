@@ -103,7 +103,7 @@ export default function Post({ post, posts, preview }) {
               />
               
 
-              <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
+              <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 5)}
               />
 	      <div dangerouslySetInnerHTML={{ __html: lastMGID }} />
               <footer>
