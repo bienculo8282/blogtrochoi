@@ -107,7 +107,18 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}           
               />
-              
+              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
+     crossorigin="anonymous"></script>
+<!-- ads-hienthi-01 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6654138796019493"
+     data-ad-slot="2472323317"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
