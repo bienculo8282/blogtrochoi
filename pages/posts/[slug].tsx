@@ -47,6 +47,19 @@ const autoGA = `<script async src="https://www.googletagmanager.com/gtag/js?id=U
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
      crossorigin="anonymous"></script>`;
 
+const gaAdsHienthi = `<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
+     crossorigin="anonymous"></script>
+<!-- ads-hienthi-01 -->
+<ins className="adsbygoogle"
+     style={{display:'block'}}
+     data-ad-client="ca-pub-6654138796019493"
+     data-ad-slot="2472323317"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>`;
+
 export default function Post({ post, posts, preview }) {
   const router = useRouter()
   const morePosts = posts?.edges
@@ -81,6 +94,12 @@ export default function Post({ post, posts, preview }) {
     );
   }
 
+    function adsGAHienthi() {
+        return (
+          <div dangerouslySetInnerHTML={{ __html: gaAdsHienthi }} />
+        );
+    }
+
   return (
     <Layout preview={preview}>
       <Container>
@@ -107,6 +126,7 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}              
               />
+                <adsGAHienthi />
            
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
