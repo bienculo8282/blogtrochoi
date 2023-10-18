@@ -126,7 +126,12 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}              
               />
-              <AdsGAHienThi />
+              <ins className="adsbygoogle"
+     style={{display:'block'}}
+     data-ad-client="ca-pub-6654138796019493"
+     data-ad-slot="2472323317"
+     data-ad-format="auto"
+     data-full-width-responsive="true" />
            
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
