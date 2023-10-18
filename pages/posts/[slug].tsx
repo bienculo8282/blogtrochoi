@@ -107,9 +107,7 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}           
               />
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6654138796019493"
-     crossorigin="anonymous"></script>
-<!-- ads-hienthi-01 -->
+            <!-- ads-hienthi-01 -->
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-6654138796019493"
