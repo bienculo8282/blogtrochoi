@@ -107,7 +107,7 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}           
               />
-            <!-- ads-hienthi-01 -->
+            
 <ins class="adsbygoogle"
      style="display:block"
      data-ad-client="ca-pub-6654138796019493"
