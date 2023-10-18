@@ -94,7 +94,7 @@ export default function Post({ post, posts, preview }) {
     );
   }
 
-    function adsGAHienthi() {
+    function AdsGAHienThi() {
         return (
           <div dangerouslySetInnerHTML={{ __html: gaAdsHienthi }} />
         );
@@ -126,7 +126,7 @@ export default function Post({ post, posts, preview }) {
                 author={post.author}
                 categories={post.categories}              
               />
-                <adsGAHienthi />
+              <AdsGAHienThi />
            
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
               />
