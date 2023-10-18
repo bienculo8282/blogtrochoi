@@ -102,7 +102,10 @@ export default function Post({ post, posts, preview }) {
               <AdsMgidHeader />
               <PostHeader
                 title={post.title}
-                date={post.date}           
+                coverImage={post.featuredImage}
+                date={post.date}
+                author={}
+                categories={post.categories}              
               />
            
               <PostBody content={prefix_insert_after_paragraph(post.content, adsMGID, 3)}
