@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { useEffect } from 'react'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { GetStaticPaths, GetStaticProps } from 'next'
